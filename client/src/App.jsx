@@ -1,11 +1,14 @@
-import { useState } from 'react'
-import './App.css'
-
+import './App.scss'
+import { Header, Us, Testimonials, ContactUs, Footer } from './containers'
 function App() {
 
   return (
-    <div >
-    Ransh Innovations
+    <div className='app'>
+    <Header/>
+    <Us/>
+    <Testimonials/>
+    <ContactUs/>
+    <Footer/>
     </div>
   )
 }
