@@ -45,7 +45,7 @@ return (
             </div>
             <div className="app__footer-right">
                 <div className="app__footer-links">
-                    <div className="">
+                    <div >
                         <h2 className="bold-text">Company</h2>
                         <ul>
                             {['About Us', 'Carrer', 'Contact Us', 'CSR', 'FAQ\'s'].map((item, index) => (
@@ -55,8 +55,8 @@ return (
                             ))}
                         </ul>
                     </div>
-                    <div className="">
-                        <h2 className="boold-text">Projects</h2>
+                    <div>
+                        <h2 className="bold-text">Projects</h2>
                         <ul>
                             {['Project 1', 'Project 2', 'Project 3', 'Project 4', 'Project 5'].map((item, index) => (
                                 <li key={index}>
@@ -66,7 +66,14 @@ return (
                         </ul>
                     </div>
                 </div>
-                <div className="app__footer-newsletter"></div>
+                <div className="app__footer-newsletter">
+                    <h2 className='bold-text'>Join Our Newsletter</h2>
+                    <div >
+                        <input type='text' placeholder='Enter your email'/>
+                        <button>Send</button>
+                    </div>
+                    <p className='p-text'>Will send you weekly updates</p>
+                </div>
             </div>
         </div>
     </footer>

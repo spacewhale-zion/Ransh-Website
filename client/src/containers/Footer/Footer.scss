@@ -9,7 +9,7 @@
     flex-direction: row;
 
     
-    @media screen and (max-width: 675px) {
+    @media screen and (max-width: 900px) {
         flex-direction: column;
         
     }
@@ -68,14 +68,14 @@
 }
 
 .app__footer-socials{
-    margin: 2rem 0;
+    margin: 3.5rem 0;
 
 
     svg{
         width: 30px ;
         height: 30px;
         color: white;
-        margin: 0 1rem 0  0;
+        margin: 0.5rem 1rem 0  0;
     }
 }
 
@@ -83,11 +83,95 @@
 
 .app__footer-right{
     flex: 0.25;
-
+    display: flex ;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+   height: 100%;
     h2{
         margin: 0.5rem 0;
         color: white;
         text-align: left;
     }
 
+}
+
+.app__footer-links{
+    display: flex   ;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    padding: 0rem 2rem 1rem 2rem;
+
+    li{
+        margin: 5px 0;
+        a{
+            color: white;
+            opacity: 80%;
+        }
+    }
+
+}
+
+.app__footer-newsletter{
+    width: 450px;
+    height: 215px;
+    background-color: #FF3601;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 2rem;
+    border-radius: 20px;
+    margin: 2rem 0;
+
+    h2{
+        font-weight: 700;
+        text-align: left;
+        width: 100%;
+    }
+
+    div{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border-radius: 10px;
+        margin: 1rem 0;
+        width: 100%;
+
+        input{
+            padding: 0.8rem 1.5rem;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            outline: none;
+            font-size: 13px;
+            font-weight: 400;
+            width: 70%;
+
+            &::placeholder{
+                color: #080061B2;
+            }
+        }
+        button{
+            background-color: #080061;
+            color: white;
+            padding: 0.65rem 2rem;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+
+    
+
+    p{
+        color: #FFFFFFCC;
+        width: 100%;
+        text-align: left;
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+    
 }
