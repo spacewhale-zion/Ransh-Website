@@ -1,4 +1,5 @@
-import './Numbers.scss'
+import './Numbers.scss';
+import { motion } from 'framer-motion';
 
 function Numbers() {
 
@@ -24,7 +25,10 @@ const data = [
 
   return (
     <div className="app__wrapper ">
-      <div className="px-20 py-12 h-[80vh]">
+      <motion.div
+      whileInView={{y:[100, 50, 0] ,opacity: [0,0,1]}}
+      transition={{duration: 0.5}}
+      className="px-20 py-8 h-[80vh]">
       <h1 className="h1-text">Numbers speak for themselves</h1>
 
 <div className="app__number-div ">
@@ -42,7 +46,7 @@ const data = [
   ))}
   </div>
 
-      </div>
+      </motion.div>
           </div>
   )
 }

@@ -1,5 +1,6 @@
 import './ContactUs.scss'
 import { useState} from 'react';
+import { motion } from 'framer-motion';
 
 const ContactUs = () => {
 
@@ -20,7 +21,10 @@ const ContactUs = () => {
   }
 return (
     <div className="app__wrapper">
-<div className='h-[80vh] py-12 px-20 bg-[#FFD646] '>
+<motion.div
+whileInView={{y:[100, 50, 0] ,opacity: [0,0,1]}}
+transition={{duration: 0.5}}
+className='h-[80vh] py-12 px-20 bg-[#FFD646] '>
         <h2 className='h1-text'>Contact Us</h2>
         <div className="app__flex mt-10">
             {!isFormSubmitted ?
@@ -55,7 +59,7 @@ return (
                 </div>
             }
         </div>
-    </div>
+    </motion.div>
     </div>
     
 )

@@ -1,5 +1,5 @@
 import './App.scss'
-import { Header, Us, Testimonials, ContactUs, Footer, Numbers } from './containers'
+import { Header, Us, Testimonials, ContactUs, Footer, Numbers, Projects, Faqs } from './containers'
 function App() {
 
   return (
@@ -7,7 +7,9 @@ function App() {
     <Header/>
     <Us/>
     <Numbers/>
+    <Projects/>
     <Testimonials/>
+    <Faqs/>
     <ContactUs/>
     <Footer/>
     </div>

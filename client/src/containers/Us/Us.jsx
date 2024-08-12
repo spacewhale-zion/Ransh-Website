@@ -29,7 +29,10 @@ function Us() {
 
   return (
     <div className="app__wrapper ">
-      <div className="px-20 py-12 h-[80vh]">
+      <motion.div 
+      whileInView={{y:[100, 50, 0] ,opacity: [0,0,1]}}
+      transition={{duration: 0.5}}
+      className="px-20 py-12 h-[80vh]">
       <h1 className="h1-text">Why Us?</h1>
 
 <div className="app__profiles ">
@@ -50,7 +53,7 @@ function Us() {
   ))}
   </div>
 
-      </div>
+      </motion.div>
           </div>
   )
 }

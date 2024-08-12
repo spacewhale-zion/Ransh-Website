@@ -33,10 +33,13 @@ const data = [
 
   return (
     <div className="app__wrapper ">
-        <div className="px-20 h-[80vh] py-12">
+        <div className="px-20 h-[80vh] pb-8">
         <h1 className="h1-text">Testimonials</h1>
 
-<div className="app__test__profiles ">
+<motion.div
+whileInView={{y:[100, 50, 0] ,opacity: [0,0,1]}}
+transition={{duration: 0.5}}
+className="app__test__profiles ">
   {data.map((item, index) => (
     <motion.div 
     whileInView={{ opacity: 1}}
@@ -57,7 +60,7 @@ const data = [
 
     </motion.div>
   ))}
-  </div>
+  </motion.div>
         </div>
       
     </div>
