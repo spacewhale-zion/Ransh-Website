@@ -32,7 +32,7 @@ function Us() {
       <motion.div 
       whileInView={{y:[100, 50, 0] ,opacity: [0,0,1]}}
       transition={{duration: 0.5}}
-      className="px-20 py-12 h-[80vh]">
+      className="px-20 py-12 ">
       <h1 className="h1-text">Why Us?</h1>
 
 <div className="app__profiles ">
@@ -41,12 +41,14 @@ function Us() {
     whileInView={{ opacity: 1}}
     whileHover={{ scale: 1.1 }}
     transition={{ duration: 0.5, type: 'tween' }}
-    className='app__profile-item h-[450px]'
+    className='app__profile-item '
     key={item.title + index}
     >
+      <div>
       <img src={item.imageUrl} alt={item.title}/>
-      <h2 className='bold-text mt-5'>{item.title}</h2>
-      <p className='p-text text-[#08006199] text-center mt-1 text-ellipsis font-normal'>{item.description}</p>
+      <h2 className='bold-text mt-2'>{item.title}</h2>
+      </div>
+      <p className='p-text text-[#08006199] text-center mt-3 md:mt-1  font-normal'>{item.description}</p>
 
 
     </motion.div>

@@ -5,13 +5,13 @@ function App() {
   return (
     <div className='app'>
     <Header/>
-    <Us/>
+    {/* <Us/>
     <Numbers/>
     <Projects/>
     <Testimonials/>
-    <Faqs/>
+      <Faqs/>
     <ContactUs/>
-    <Footer/>
+    <Footer/> */}
     </div>
   )
 }
