@@ -6,8 +6,8 @@ function App() {
     <div className='app'>
     <Header/>
     <Us/>
-    {/* <Numbers/>
-    <Projects/>
+    <Numbers/>
+    {/* <Projects/>
     <Testimonials/>
       <Faqs/>
     <ContactUs/>

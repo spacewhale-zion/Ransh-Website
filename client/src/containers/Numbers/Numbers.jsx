@@ -24,18 +24,33 @@ const data = [
 ];
 
   return (
-    <div className="app__wrapper ">
+    <div className="app__wrapper mt-10 ">
       <motion.div
-      whileInView={{y:[100, 50, 0] ,opacity: [0,0,1]}}
+      whileInView={{y:[100,  0] ,opacity: [0,1]}}
       transition={{duration: 0.5}}
-      className="px-20 py-8 h-[80vh]">
-      <h1 className="h1-text">Numbers speak for themselves</h1>
+      className="">
+      <h1 className="h1-text-num">Numbers speak for themselves</h1>
 
-<div className="app__number-div ">
+<div className="app__number-div  ">
   {data.map((item, index) => (
     <div 
 
     className='app__number-item '
+    key={ index}
+    >
+      <h2 className='bold-text text-white'>{item.value}</h2>
+      <p className='p-text text-[white] text-center font-normal'>{item.title}</p>
+
+
+    </div>
+  ))}
+  </div>
+
+<div className="app__number-div-mobile grid-cols-2 ">
+  {data.map((item, index) => (
+    <div 
+
+    className='app__number-item-mobile '
     key={ index}
     >
       <h2 className='bold-text text-white'>{item.value}</h2>

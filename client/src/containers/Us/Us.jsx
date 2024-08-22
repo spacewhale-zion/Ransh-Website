@@ -31,7 +31,7 @@ function Us() {
   ];
 
   return (
-    <div className="app__wrapper ">
+    <div className="app__wrapper mt-10 ">
       <motion.div
         whileInView={{ y: [100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
