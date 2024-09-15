@@ -33,7 +33,7 @@ className='app__wrapper '>
         <h2 className='h1-text'>Contact Us</h2>
         <div className="app__flex mt-10">
             {!isFormSubmitted ?
-                <div className=" app__flex w-full">
+                <div className=" app__flex-contact w-full">
                     <div className="app__footer-form app__flex ">
                     <div className="app__flex ">
                         <input className='p-text' type='text' placeholder='Your Name' name='name' value={name} onChange={handleChangeInput} />

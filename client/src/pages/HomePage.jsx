@@ -10,7 +10,7 @@ export const HomePage = () => {
     <Testimonials/>
       <Faqs/>
     <ContactUs/>
-    {/* <Footer/> */}
+    <Footer/>
     </div>
   )
 }
