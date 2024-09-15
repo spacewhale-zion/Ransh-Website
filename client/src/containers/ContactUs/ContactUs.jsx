@@ -16,15 +16,20 @@ const ContactUs = () => {
     setFormData({...formData, [name]: value})
   }
 
-  const handleSubmit = () => {
+const handleSubmit = () => {
+    setLoading(true);
+    setTimeout(() => {
+        setIsFormSubmitted(true);
+        setLoading(false);
+    }, 5000);
+}
 
-  }
 return (
-    <div className="app__wrapper">
+    <div className=" bg-[#FFD646] my-10 py-10">
 <motion.div
 whileInView={{y:[100, 50, 0] ,opacity: [0,0,1]}}
 transition={{duration: 0.5}}
-className='h-[80vh] py-12 px-20 bg-[#FFD646] '>
+className='app__wrapper '>
         <h2 className='h1-text'>Contact Us</h2>
         <div className="app__flex mt-10">
             {!isFormSubmitted ?

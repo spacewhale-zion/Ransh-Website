@@ -50,11 +50,11 @@ function Projects() {
   }
 
   return (
-    <div className="project__wrapper ">
+    <div className="app__wrapper md:mt-10 mt-2 ">
       <motion.div
-      whileInView={{y:[100, 50, 0] ,opacity: [0,0,1]}}
+      whileInView={{opacity: [0,1]}}
       transition={{duration: 0.5}}
-      className="px-20 pb-8">
+      className="">
       <h1 className="h1-text">Our Projects</h1>
 
 <div className="app__projects ">
@@ -79,8 +79,9 @@ function Projects() {
         </div>
       </div>
     ): (
+      <>
       <motion.div 
-      whileInView={{y:[100, 50, 0] ,opacity: [0,0,1]}}
+      whileInView={{opacity: [0,1]}}
     transition={{duration: 0.5}}
       className='app__project-openitem '
       key={ index}
@@ -105,10 +106,35 @@ function Projects() {
         </motion.div>
         
         <img src={item.imageUrl} alt={item.title}/>
-  
-  
       </motion.div>
-    ) 
+
+
+      <motion.div 
+  whileInView={{y: [-100, 0], opacity: [0, 1]}}
+      transition={{duration: 0.5}}
+      className='app__project-openitem-mobile '
+      key={ index}
+      onClick={() => handleIndexChange(index)}
+      >
+        
+        <h2 className='bold-text'>{item.title}</h2>
+        <ul className="app__work-filter  ">
+          {item.categories.map((item, index)=> (
+            <li key={index}
+            className={`app__work-filter-item app__flex p-text `}
+            >
+           {item}
+            </li>
+          ))}
+        </ul>
+        <img src={item.imageUrl} alt={item.title}/>
+        <p className='p-text '>{item.description}</p>
+        <button className='p-text text-white text-center'>View Case Study</button>
+        
+      </motion.div>
+
+      </>
+          ) 
     
   ))}
   </div>

@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import './Navbar.scss';
 import { useState } from 'react';
 import {  HiMenu, HiX } from 'react-icons/hi';
@@ -9,8 +8,13 @@ const Navbar = () => {
     const [toggle, setToggle] = useState(false);
 
     const [isCompanyOpen, setIsCompanyOpen] = useState(false);
-
-    return (
+    
+// const menuItems = [
+//     { name: 'home', link: '#' },
+//     { name: 'company', link: '#' },
+//     { name: 'projects', link: '#' }
+// ];
+return (
         <nav className='app__navbar'>
             <div className="app__navbar-logo">
                 <img src={'./logo.svg'} alt='logo' />
@@ -99,7 +103,7 @@ const Navbar = () => {
                 )}
             </div>
         </nav>
-    );
+)
 };
 
 export default Navbar;

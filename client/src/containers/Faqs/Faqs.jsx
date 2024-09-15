@@ -1,7 +1,6 @@
 import './Faqs.scss'
 import {useState} from 'react'
 import { motion } from 'framer-motion';
-import { BiPlus } from 'react-icons/bi';
 import { GoPlus } from 'react-icons/go';
 import { FiMinus } from 'react-icons/fi';
 
@@ -39,11 +38,11 @@ const data = [
   }
 
   return (
-    <div className="faq__wrapper ">
+    <div className="app__wrapper mt-2 md:mt-10 ">
       <motion.div
       whileInView={{y:[100, 50, 0] ,opacity: [0,0,1]}}
       transition={{duration: 0.5}}
-      className="px-20 pb-8">
+      className="">
       <h1 className="h1-text">Frequently Asked Questions</h1>
 
 <div className="app__faqs ">
