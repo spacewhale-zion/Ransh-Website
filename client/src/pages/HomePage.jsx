@@ -1,6 +1,7 @@
 import { Header, Us, Testimonials, ContactUs, Footer, Numbers, Projects, Faqs } from '../containers'
 
 export const HomePage = () => {
+  const contact_header = "Contact Us";
   return (
     <div className='app'>
     <Header/>
@@ -9,7 +10,7 @@ export const HomePage = () => {
     <Projects/>
     <Testimonials/>
       <Faqs/>
-    <ContactUs/>
+    <ContactUs header={contact_header} />
     <Footer/>
     </div>
   )

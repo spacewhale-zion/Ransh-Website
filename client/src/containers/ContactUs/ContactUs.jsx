@@ -2,7 +2,7 @@ import './ContactUs.scss'
 import { useState} from 'react';
 import { motion } from 'framer-motion';
 
-const ContactUs = () => {
+const ContactUs = ({header}) => {
 
   const [formData, setFormData] = useState({ name: '', email: '', message: '', phone: '' }); 
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
@@ -30,7 +30,7 @@ return (
 whileInView={{y:[100, 50, 0] ,opacity: [0,0,1]}}
 transition={{duration: 0.5}}
 className='app__wrapper '>
-        <h2 className='h1-text'>Contact Us</h2>
+        <h2 className='h1-text'>{header}</h2>
         <div className="app__flex mt-10">
             {!isFormSubmitted ?
                 <div className=" app__flex-contact w-full">

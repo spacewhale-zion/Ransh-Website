@@ -1,5 +1,5 @@
 import './Navbar.scss';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {  HiMenu, HiX } from 'react-icons/hi';
 import { IoIosArrowDown } from "react-icons/io";
 import { motion } from 'framer-motion';
@@ -9,6 +9,21 @@ const Navbar = () => {
     const [toggle, setToggle] = useState(false);
 
     const [isCompanyOpen, setIsCompanyOpen] = useState(false);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            const dropdown = document.querySelector('.app__navbar-dropdown');
+            if (dropdown && !dropdown.contains(event.target)) {
+                setIsCompanyOpen(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
     
 const menuItems = [
     { name: 'home', link: '/' },
@@ -99,7 +114,7 @@ return (
                                         )}
                                     </>
                                 ) : (
-                                    <Link to={`${item}`} onClick={() => setToggle(!toggle)}>{item.name}</Link>
+                                    <Link to={`${item.link}`} onClick={() => setToggle(!toggle)}>{item.name}</Link>
                                 )}
                             </li>
                         ))}

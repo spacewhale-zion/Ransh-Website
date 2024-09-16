@@ -22,8 +22,8 @@ className='app__header  app__flex '>
         <div className='app__header-badge   '>
           <div className=" app__flex">
             <div className=" ml-5">
-              <h2 className='head-text mb-8 md:mr-0 mr-3'>Not sure on how to get <span>solution</span> to your problems? </h2>
-              <p className='p-text text-white text-left'>Lorem ipsum dolor sit amet consectetur. In id faucibus quis mauris. Nequ ipsum interdum leo venenatis ridiculus arcu vestibulum lacus risus. Diam elementum phasellus dui fermentum. Dictumst non aliquam in aliquet eu nam sit.</p>
+              <h2 className='head-text mb-8 md:mr-0 mr-4'>Not sure on how to get <span>solution</span> to your problems? </h2>
+              <p className='p-text text-white text-left mr-4 md:mr-0'>Lorem ipsum dolor sit amet consectetur. In id faucibus quis mauris. Nequ ipsum interdum leo venenatis ridiculus arcu vestibulum lacus risus. Diam elementum phasellus dui fermentum. Dictumst non aliquam in aliquet eu nam sit.</p>
             </div>
           </div>
           <div className="flex flex-row justify-between w-full ">

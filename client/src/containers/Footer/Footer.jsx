@@ -10,7 +10,7 @@ import { AiFillInstagram } from "react-icons/ai";
 function Footer() {
 return (
     <footer>
-        <div className="app__footer">
+        <div className="app__footer ">
             <div className="app__footer-left gap-9">
                 <div className="flex flex-col text-left gap-8 justify-start">
                     <img src="./logo.svg" alt="logo" />
