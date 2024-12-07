@@ -6,25 +6,33 @@ import { FiMinus } from 'react-icons/fi';
 
 function Faqs() {
 
-const data = [
-    {
-        question: "Lorem ipsum dolor sit amet consectet roin nascetur dictum turpis nisi orci dui?",
-        answer: "Lorem ipsum dolor sit amet consectet. Proin nascetur dictum turpis nisi orci dui. Libero urna risus aliquam mauris odio. Lorem ipsum dolor sit amet consectet. Ri nascetur dictum turpis nisi. Lorem ipsum dolor sit amet consectet. Proin nascetur dictum turpis nisi orci dui. Libero urna risus aliquam mauris odio. Lorem ipsum dolor sit amet consectet. Ri nascetur dictum turpis nisi."
-    },
-    {
-        question: "Lorem ipsum dolor sit amet consectet roin nascetur dictum turpis nisi orci dui?",
-        answer: "Lorem ipsum dolor sit amet consectet. Proin nascetur dictum turpis nisi orci dui. Libero urna risus aliquam mauris odio. Lorem ipsum dolor sit amet consectet. Ri nascetur dictum turpis nisi. Lorem ipsum dolor sit amet consectet. Proin nascetur dictum turpis nisi orci dui. Libero urna risus aliquam mauris odio. Lorem ipsum dolor sit amet consectet. Ri nascetur dictum turpis nisi."
-    },
-    {
-        question: "Lorem ipsum dolor sit amet consectet roin nascetur dictum turpis nisi orci dui?",
-        answer: "Lorem ipsum dolor sit amet consectet. Proin nascetur dictum turpis nisi orci dui. Libero urna risus aliquam mauris odio. Lorem ipsum dolor sit amet consectet. Ri nascetur dictum turpis nisi. Lorem ipsum dolor sit amet consectet. Proin nascetur dictum turpis nisi orci dui. Libero urna risus aliquam mauris odio. Lorem ipsum dolor sit amet consectet. Ri nascetur dictum turpis nisi."
-    },
-    {
-        question: "Lorem ipsum dolor sit amet consectet roin nascetur dictum turpis nisi orci dui?",
-        answer: "Lorem ipsum dolor sit amet consectet. Proin nascetur dictum turpis nisi orci dui. Libero urna risus aliquam mauris odio. Lorem ipsum dolor sit amet consectet. Ri nascetur dictum turpis nisi. Lorem ipsum dolor sit amet consectet. Proin nascetur dictum turpis nisi orci dui. Libero urna risus aliquam mauris odio. Lorem ipsum dolor sit amet consectet. Ri nascetur dictum turpis nisi."
-    },
-
-];
+    const data = [
+        {
+          question: "What makes your products stand out?",
+          answer: "Our solutions focus on innovation and user experience, leveraging the latest technologies to provide intuitive and effective tools for our users."
+        },
+        {
+          question: "How do you ensure product quality?",
+          answer: "We prioritize quality by following best practices in software development, including rigorous testing and user feedback during the development process."
+        },
+        {
+          question: "What industries do you serve?",
+          answer: "We develop products specifically for the defense, sports, and ed-tech industries, offering web-based solutions that address the unique challenges of each sector."
+        },
+        {
+          question: "What makes you a product-based company?",
+          answer: "Unlike service-based companies that provide outsourced solutions, we focus on creating and launching our own innovative products tailored to industry needs."
+        },
+        {
+          question: "Do you offer customization of your products?",
+          answer: "While our products are designed to solve broad industry challenges, we also provide customization options to meet specific client needs."
+        },
+        {
+          question: "Are your products scalable?",
+          answer: "Yes, all of our web-based solutions are designed with scalability in mind, ensuring they can grow alongside your business or organizational needs."
+        }
+      ];
+      
 
   const [openIndex , setOpenIndex] = useState(null);
 

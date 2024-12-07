@@ -5,19 +5,19 @@ function Numbers() {
 
 const data = [
     {
-        title: 'Years of Experience',
-        value: '10+'
+        title: 'Number of interns',
+        value: '100+'
     },
     {
-        title: 'Years of Experience',
-        value: '10+'
+        title: 'Number of innovative projects',
+        value: '25+'
     },
     {
-        title: 'Years of Experience',
-        value: '10+'
+        title: 'Sectors in which we work',
+        value: '5'
     },
     {
-        title: 'Years of Experience',
+        title: 'Number of AI Projects',
         value: '10+'
     },
     
