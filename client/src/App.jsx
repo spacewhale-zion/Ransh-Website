@@ -6,6 +6,7 @@ import ProjectsPage from './pages/ProjectsPage';
 import ContactUsPage from './pages/ContactUsPage';
 import FAQsPage from './pages/FAQsPage';
 import NotFoundPage from './pages/NotFoundPage';
+import Carrer from './pages/Carrer';
 function App() {
 
   return (
@@ -13,6 +14,8 @@ function App() {
    <Router>
     <Routes>
       <Route path='/' element={<HomePage/>}/>
+      <Route path='/carrer' element={<Carrer/>}/>
+
       <Route path='/about' element={<AboutUsPage/>}/>
       <Route path='/projects' element={<ProjectsPage/>}/>
       <Route path='/contact' element={<ContactUsPage/>}/>

@@ -32,7 +32,7 @@ const menuItems = [
 ];
 const subMenuItems = [
     { name: 'About Us', link: '/about' },
-    { name: 'Careers', link: '/notfound' },
+    { name: 'Careers', link: '/carrer' },
     { name: 'Blogs', link: '/notfound' },
     { name: 'Contact Us', link: '/contact' },
     { name: 'CSR', link: '/notfound' },
